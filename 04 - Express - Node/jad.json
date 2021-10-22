@@ -1,0 +1,16 @@
+{
+  "firstName": "jad",
+  "lastName": "Taha",
+  "age": 21,
+  "cars": {
+    "car1": {
+      "name": "lambo",
+      "color": "green"
+    },
+
+    "car2": {
+      "name": "Ferari",
+      "color": "yellow"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
+#output {
+  margin: 10px;
+}
+
+form {
+  margin: 0px auto;
+  background-color: brown;
+  width: fit-content;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 10px;
+}

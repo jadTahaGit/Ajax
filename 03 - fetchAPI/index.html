@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax</title>
+  </head>
+  <body>
+    <h1>Fetching The Random User API</h1>
+    <div id="output"></div>
+    <script>
+      const url = "https://randomuser.me/api";
+      const output = document.getElementById("output");
+
+      fetch(url)
+        .then((res) => res.json())
+        .then((result) => {
+          // console.log(result);
+          console.log(result.results[0]);
+          let object = result.results[0];
+          for (item in object) {
+            output.innerHTML += `${item}: ${object[item]} <br>`;
+          }
+        });
+    </script>
+  </body>
+</html>
